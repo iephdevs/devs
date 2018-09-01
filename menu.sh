@@ -1,7 +1,7 @@
 #!/bin/bash
 #Menu
 
-echo 'echo -e " Welcome to IEPH DEVELOPERS SCRIPT
+echo -e " Welcome to IEPH DEVELOPERS SCRIPT
 
 echo -e "* menu      : Displays a list of available commands"
 echo -e "* usernew   : Creating an SSH Account"
