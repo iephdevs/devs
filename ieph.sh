@@ -70,13 +70,23 @@ apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
 
 echo "clear" >> .bashrc
 
-echo 'echo -e "██╗███████╗██████╗ ██╗  ██╗"' >> .bashrc
-echo 'echo -e "██║██╔════╝██╔══██╗██║  ██║"' >> .bashrc
-echo 'echo -e "██║█████╗  ██████╔╝███████║"' >> .bashrc
-echo 'echo -e "██║██╔══╝  ██╔═══╝ ██╔══██║"' >> .bashrc
-echo 'echo -e "██║███████╗██║     ██║  ██║"' >> .bashrc
-echo 'echo -e "╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝"' >> .bashrc
+echo 'echo -e "█████████████████████████████"' >> .bashrcecho 'echo -e "
 
+█╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█ "' >> .bashrc                                       echo 'echo -e " █╬██╬███████╬██████╬██╬╬╬██╬█"' >> .bashrc
+
+echo 'echo -e "█╬██╬██╬╬╬╬╬╬██╬╬██╬██╬╬╬██╬█"' >> .bashrcecho 'echo -e "
+
+█╬██╬█████╬╬╬██████╬███████╬█"' >> .bashrcecho 'echo -e "
+
+█╬██╬██╬╬╬╬╬╬██╬╬╬╬╬██╬╬╬██╬█"' >> .bashrc
+
+echo 'echo -e "█╬██╬███████╬██╬╬╬╬╬██╬╬╬██╬█"' >> .bashrc
+
+echo 'echo -e "█╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█"' >> .bashrc
+
+echo 'echo -e "███████╬INJECTOR EHI PH╬███████"' >> .bashrcecho 'echo -e "
+
+█████████████████████████████"' >> .bashrc
 echo 'echo -e "                                                  "' >> .bashrc
 echo 'echo -e "welcome to the server $HOSTNAME" | lolcat' >> .bashrc
 echo 'echo -e "Script mod by IEPH DEVELOPERS" | lolcat' >> .bashrc
