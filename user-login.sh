@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Script Copyright www.fornesia.com
-# Mod by Clrkz
+# Mod by IEPH DEVELOPERS
 # ==========================
 # 
 
@@ -50,6 +50,6 @@ echo "------------------------------------------------" | lolcat
 
 echo "";
 
-echo "Mod by Clrkz";
+echo "Mod by IEPH DEVELOPERS";
 
 echo "";
