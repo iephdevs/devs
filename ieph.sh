@@ -70,14 +70,14 @@ apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
 
 echo "clear" >> .bashrc
 
-echo 'echo -e "██╗███████╗██████╗ ██╗  ██╗" | lolcat' >> .bashrc
-echo 'echo -e "██║██╔════╝██╔══██╗██║  ██║" | lolcat' >> .bashrc
-echo 'echo -e "██║█████╗  ██████╔╝███████║" | lolcat' >> .bashrc
-echo 'echo -e "██║██╔══╝  ██╔═══╝ ██╔══██║" | lolcat' >> .bashrc
-echo 'echo -e "██║███████╗██║     ██║  ██║" | lolcat' >> .bashrc
-echo 'echo -e "╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝" | lolcat' >> .bashrc
+echo 'echo -e "██╗███████╗██████╗ ██╗  ██╗"' >> .bashrc
+echo 'echo -e "██║██╔════╝██╔══██╗██║  ██║"' >> .bashrc
+echo 'echo -e "██║█████╗  ██████╔╝███████║"' >> .bashrc
+echo 'echo -e "██║██╔══╝  ██╔═══╝ ██╔══██║"' >> .bashrc
+echo 'echo -e "██║███████╗██║     ██║  ██║"' >> .bashrc
+echo 'echo -e "╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝"' >> .bashrc
 
-echo 'echo -e "                                                  /"' >> .bashrc
+echo 'echo -e "                                                  "' >> .bashrc
 echo 'echo -e "welcome to the server $HOSTNAME" | lolcat' >> .bashrc
 echo 'echo -e "Script mod by IEPH DEVELOPERS" | lolcat' >> .bashrc
 echo 'echo -e "Type menu to display a list of commands"' >> .bashrc
