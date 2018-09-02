@@ -12,9 +12,9 @@ wget -q -O daftarip http://188.166.215.119:85/ocs/ip.txt
 if ! grep -w -q $MYIP daftarip; then
 	echo "Sorry, only registered IPs can use this script!"
 	if [[ $vps = "vps" ]]; then
-		echo "Powered by Clrkz"
+		echo "Powered by IEPH DEVELOPERS"
 	else
-		echo "Powered by Clrkz"
+		echo "Powered by IEPH DEVELOPERS"
 	fi
 	rm -f /root/daftarip
 	exit
@@ -70,20 +70,16 @@ apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
 
 echo "clear" >> .bashrc
 
-echo 'echo -e "██╗███████╗██████╗ ██╗  ██╗/"' >> .bashrc
-echo 'echo -e "██║██╔════╝██╔══██╗██║  ██║/"' >> .bashrc
-echo 'echo -e "██║█████╗  ██████╔╝███████║/"' >> .bashrc
-echo 'echo -e "██║██╔══╝  ██╔═══╝ ██╔══██║/"' >> .bashrc
-echo 'echo -e "██║███████╗██║     ██║  ██║/"' >> .bashrc
-echo 'echo -e "╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝/"' >> .bashrc
-                           
+echo 'echo -e "██╗███████╗██████╗ ██╗  ██╗" | lolcat' >> .bashrc
+echo 'echo -e "██║██╔════╝██╔══██╗██║  ██║" | lolcat' >> .bashrc
+echo 'echo -e "██║█████╗  ██████╔╝███████║" | lolcat' >> .bashrc
+echo 'echo -e "██║██╔══╝  ██╔═══╝ ██╔══██║" | lolcat' >> .bashrc
+echo 'echo -e "██║███████╗██║     ██║  ██║" | lolcat' >> .bashrc
+echo 'echo -e "╚═╝╚══════╝╚═╝     ╚═╝  ╚═╝" | lolcat' >> .bashrc
 
-echo 'echo -e "                                                     /"' >> .bashrc
-echo 'echo -e "                                                    /"' >> .bashrc
-echo 'echo -e "                                                   /"' >> .bashrc
 echo 'echo -e "                                                  /"' >> .bashrc
 echo 'echo -e "welcome to the server $HOSTNAME" | lolcat' >> .bashrc
-echo 'echo -e "Script mod by IEPH DEVELOPERS"' >> .bashrc
+echo 'echo -e "Script mod by IEPH DEVELOPERS" | lolcat' >> .bashrc
 echo 'echo -e "Type menu to display a list of commands"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 
@@ -93,7 +89,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/iephdevs/devs/master/nginx.conf"
 mkdir -p /home/vps/public_html
-echo "<pre>Setup by Clrkz</pre>" > /home/vps/public_html/index.html
+echo "<pre>Setup by IEPH DEVELOPERS</pre>" > /home/vps/public_html/index.html
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/iephdevs/devs/master/vps.conf"
 service nginx restart
 
@@ -295,7 +291,7 @@ echo "Timezone : Asia/Manila (GMT +7)"  | tee -a log-install.txt
 echo "IPv6     : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Original Script by Fornesia, Rzengineer & Fawzya"  | tee -a log-install.txt
-echo "Modified by Clrkz"  | tee -a log-install.txt
+echo "Modified by IEPH DEVELOPERS"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
