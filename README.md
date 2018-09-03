@@ -1,9 +1,9 @@
 # VPSAutoScrptz
 Tunneling Service:  
-OCS Panel: 85   
+
 OpenSSH : 22, 444   
-Dropbear : 143, 3128    
-SSL : 443     
+Dropbear : 443,80
+SSL : 442
 Squid3 : 8000, 8080 (limit to IP SSH)     
 OpenVPN : TCP 1194 (client config : http://myip:81/client.ovpn)    
 badvpn : badvpn-udpgw port 7300    
