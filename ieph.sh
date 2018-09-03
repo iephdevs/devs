@@ -70,17 +70,17 @@ apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
 
 echo "clear" >> .bashrc
 
-echo 'echo -e "█████████████████████████████" | lolcat' >> .bashrc
-echo 'echo -e "█╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█" | lolcat' >> .bashrc
-echo 'echo -e "█╬██╬███████╬██████╬██╬╬╬██╬█" | lolcat' >> .bashrc
-echo 'echo -e "█╬██╬██╬╬╬╬╬╬██╬╬██╬██╬╬╬██╬█" | lolcat' >> .bashrc
-echo 'echo -e "█╬██╬██╬╬╬╬╬╬██╬╬██╬██╬╬╬██╬█" | lolcat' >> .bashrc
-echo 'echo -e "█╬██╬█████╬╬╬██████╬███████╬█" | lolcat' >> .bashrc
-echo 'echo -e "█╬██╬██╬╬╬╬╬╬██╬╬╬╬╬██╬╬╬██╬█" | lolcat' >> .bashrc
-echo 'echo -e "█╬██╬███████╬██╬╬╬╬╬██╬╬╬██╬█" | lolcat' >> .bashrc
-echo 'echo -e "█╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█" | lolcat' >> .bashrc
-echo 'echo -e "███████╬INJECTOR EHI PH╬███████" | lolcat' >> .bashrc
-echo 'echo -e "█████████████████████████████" | lolcat' >> .bashrc
+echo 'echo -e "█████████████████████████████"' >> .bashrc
+echo 'echo -e "█╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█"' >> .bashrc
+echo 'echo -e "█╬██╬███████╬██████╬██╬╬╬██╬█"' >> .bashrc
+echo 'echo -e "█╬██╬██╬╬╬╬╬╬██╬╬██╬██╬╬╬██╬█"' >> .bashrc
+echo 'echo -e "█╬██╬██╬╬╬╬╬╬██╬╬██╬██╬╬╬██╬█"' >> .bashrc
+echo 'echo -e "█╬██╬█████╬╬╬██████╬███████╬█"' >> .bashrc
+echo 'echo -e "█╬██╬██╬╬╬╬╬╬██╬╬╬╬╬██╬╬╬██╬█"' >> .bashrc
+echo 'echo -e "█╬██╬███████╬██╬╬╬╬╬██╬╬╬██╬█"' >> .bashrc
+echo 'echo -e "█╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█"' >> .bashrc
+echo 'echo -e "███████╬INJECTOR EHI PH╬███████"' >> .bashrc
+echo 'echo -e "█████████████████████████████"' >> .bashrc
 echo 'echo -e "                                                  "' >> .bashrc
 echo 'echo -e "welcome to the server $HOSTNAME" | lolcat' >> .bashrc
 echo 'echo -e "Script mod by IEPH DEVELOPERS" | lolcat' >> .bashrc
@@ -136,8 +136,8 @@ service ssh restart
 # install dropbear
 apt-get -y install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=3128/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 143"/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=443/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 443 -p 80"/g' /etc/default/dropbear
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
 service ssh restart
@@ -151,10 +151,19 @@ sed -i $MYIP2 /etc/squid3/squid.conf;
 service squid3 restart
 
 # install webmin
-cd
+cd /root
+
+wget http://www.webmin.com/jcameron-key.asc
+
+apt-key add jcameron-key.asc
+
+echo "deb http://download.webmin.com/download/repository sarge contrib" >> /etc/apt/sources.list
+
+echo "deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib" >> /etc/apt/sources.list
+
+apt-get update
+
 apt-get -y install webmin
-sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
-service webmin restart
 
 # install stunnel
 apt-get install stunnel4 -y
@@ -167,7 +176,7 @@ socket = r:TCP_NODELAY=1
 
 
 [dropbear]
-accept = 443
+accept = 442
 connect = 127.0.0.1:3128
 
 END
