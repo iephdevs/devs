@@ -4,7 +4,7 @@ Tunneling Service:
 OpenSSH : 22, 444   
 Dropbear : 443,80
 SSL : 442
-Squid3 : 8000, 8080 (limit to IP SSH)     
+Squid3 : 80,8888,8000,8080,3128 (limit to IP SSH)     
 OpenVPN : TCP 1194 (client config : http://myip:81/client.ovpn)    
 badvpn : badvpn-udpgw port 7300    
 nginx : 81
