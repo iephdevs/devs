@@ -70,21 +70,21 @@ apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
 
 echo "clear" >> .bashrc
 
-echo 'echo -e "█████████████████████████████"' >> .bashrc
-echo 'echo -e "█╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█"' >> .bashrc
-echo 'echo -e "█╬██╬███████╬██████╬██╬╬╬██╬█"' >> .bashrc
-echo 'echo -e "█╬██╬██╬╬╬╬╬╬██╬╬██╬██╬╬╬██╬█"' >> .bashrc
-echo 'echo -e "█╬██╬██╬╬╬╬╬╬██╬╬██╬██╬╬╬██╬█"' >> .bashrc
-echo 'echo -e "█╬██╬█████╬╬╬██████╬███████╬█"' >> .bashrc
-echo 'echo -e "█╬██╬██╬╬╬╬╬╬██╬╬╬╬╬██╬╬╬██╬█"' >> .bashrc
-echo 'echo -e "█╬██╬███████╬██╬╬╬╬╬██╬╬╬██╬█"' >> .bashrc
-echo 'echo -e "█╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█"' >> .bashrc
-echo 'echo -e "███████╬INJECTOR EHI PH╬███████"' >> .bashrc
-echo 'echo -e "█████████████████████████████"' >> .bashrc
-echo 'echo -e "                                                  "' >> .bashrc
+echo 'echo -e "\e[0;34m  █████████████████████████████"' >> .bashrc
+echo 'echo -e "\e[0;34m  █╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█"' >> .bashrc
+echo 'echo -e "\e[0;34m  █╬██╬███████╬██████╬██╬╬╬██╬█"' >> .bashrc
+echo 'echo -e "\e[0;34m  █╬██╬██╬╬╬╬╬╬██╬╬██╬██╬╬╬██╬█"' >> .bashrc
+echo 'echo -e "\e[0;34m  █╬██╬██╬╬╬╬╬╬██╬╬██╬██╬╬╬██╬█"' >> .bashrc
+echo 'echo -e "\e[0;34m  █╬██╬█████╬╬╬██████╬███████╬█"' >> .bashrc
+echo 'echo -e "\e[0;34m  █╬██╬██╬╬╬╬╬╬██╬╬╬╬╬██╬╬╬██╬█"' >> .bashrc
+echo 'echo -e "\e[0;34m  █╬██╬███████╬██╬╬╬╬╬██╬╬╬██╬█"' >> .bashrc
+echo 'echo -e "\e[0;34m  █╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬╬█"' >> .bashrc
+echo 'echo -e "\e[0;34m  ███████╬INJECTOR EHI PH╬███████"' >> .bashrc
+echo 'echo -e "\e[0;34m  █████████████████████████████"' >> .bashrc
+echo 'echo -e "\e[0m                                               "' >> .bashrc
 echo 'echo -e "welcome to the server $HOSTNAME" | lolcat' >> .bashrc
 echo 'echo -e "Script mod by IEPH DEVELOPERS" | lolcat' >> .bashrc
-echo 'echo -e "Type menu to display a list of commands"' >> .bashrc
+echo 'echo -e "\e[1;31m Type menu to display a list of commands"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 
 # install webserver
